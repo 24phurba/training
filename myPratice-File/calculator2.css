@@ -1,0 +1,50 @@
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,5fr);
+    gap:9px
+}
+.btn{
+    background-color: red;
+    width: 99%;
+    height: 50px;
+    border-radius: 17px;
+    font-size: .9rem;
+}
+.btn.operator{
+    background-color: aqua;
+    color:blue
+}
+.btn.zero{
+    grid-column: span 2;
+    background-color: aquamarine;
+}
+.btn.equal{
+    background-color: blueviolet;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif ;
+    margin: 0px;
+}
+.calculator{
+    width:300px;
+    background-color: rgb(215, 201, 201);
+    text-align: center;
+    padding: 25px;
+    border-radius: 35px;
+    text-shadow: 2px, .7px,rgb(215, 22, 148)
+  
+}
+.display{
+    width: 10px;
+    text-align:center ;
+    height:20px;
+    border-radius: 30px;
+    color:blue
+    
+
+
+
+}

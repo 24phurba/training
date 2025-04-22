@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(101, 185, 185)
+}
+.header{
+    text-align: center;
+    font-size: larger;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container a {
+    font-size: smaller;
+}
+
+.right a {
+    color: rgb(37, 19, 71)
+}
+
+.left a {
+    color: brown
+}
+
+.main-container {
+    display: flex;
+    min-height: 70vh;
+}
+
+aside {
+    width:30%;
+    background-color:blue;
+}
+
+main {
+    width:70%;
+    background-color:red;
+}
+.footer{
+   text-align: center;
+}
