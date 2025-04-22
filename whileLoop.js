@@ -4,5 +4,3 @@ let phurba=
 
 console.log(player);
 console.log(phurba);
-
-function 
