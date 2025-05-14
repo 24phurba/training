@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glowing Rose</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .glow-rose {
+      font-size: 100px;
+      animation: glow 4s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055, 0 0 30px #ff3366;
+        transform: scale(1);
+      }
+      to {
+        text-shadow: 0 0 20px #ff66aa, 0 0 40px #ff99cc, 0 0 60px #ff99cc;
+        transform: scale(1.05);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-rose">🌹</div>
+</body>
+</html>
