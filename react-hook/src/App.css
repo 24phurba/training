@@ -1,0 +1,95 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Poppins", sans-serif;
+  background: #fef6ff;
+  color: #444;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff0f5;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 2px solid #ffb6c1;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ffa7c4;
+  background: #fff9fb;
+}
+
+label {
+  font-weight: bold;
+  color: #b563a4;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 5px 5px 15px 0;
+  background-color: #ffc0cb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffb6c1;
+}
+
+.todo-item {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #ffb6c1;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 192, 203, 0.3);
+  transition: all 0.3s ease;
+}
+
+.todo-item.completed {
+  background-color: #d8ffd8;
+  border-left-color: #74c674;
+  opacity: 0.8;
+}
+
+.todo-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+h2 {
+  text-align: center;
+  color: #d76aa0;
+  margin-top: 30px;
+}
+
+/* App.css */
+

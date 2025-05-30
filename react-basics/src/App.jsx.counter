@@ -1,0 +1,187 @@
+import "./App.css";
+import { useState } from "react";
+// const NameCard = (props) => {
+//   const {name, age, bio,} = props;
+//   return (
+//     <div className = "shadow-3 p-2 rounded-sm">
+//       <p>
+//         <span className = "star">{name}</span>
+//       </p>
+//       <p>{age}</p>
+//       <p>{bio}</p>
+//     </div>
+//   );
+// };
+
+// function App(){
+//   return (
+//     <div>
+//       <NameCard name="Norbu" age="20" bio="she is from lhuntse"/>
+//       <NameCard name="Jamyang" age="24" bio="she is from Bumthang"/>
+//       <NameCard name="Phurba" age="25" bio="she is from Punakha"/>
+//     </div>
+//   );
+// };
+
+//   const NameCard = ({name, age, bio, position="left"}) => {
+//   return (
+//     <div className = {`shadow-3 name-card ${position}`}>
+//       <p>{name}</p>
+//       <p>{age}</p>
+//       <p>{bio}</p>
+//     </div>
+//   );
+// };
+
+// function App(){
+//   return (
+//     <div>
+//       <NameCard name="Norbu" age="20" bio="she is from lhuntse" position="left"/>
+//       <NameCard name="Jamyang" age="24" bio="she is from Bumthang" position="right"/>
+//       <NameCard name="Phurba" age="25" bio="she is from Punakha" position="left"/>
+//       <NameCard name="Tashii" age="24" bio="she is from Trongsa" position="right"/>
+//     </div>
+//   );
+// // };
+// const owner = 1;
+// const messages = [
+//   {
+//     senderId: 1,
+//     name: "Tashii",
+//     message: "hello bro",
+//   },
+//   {
+//     senderId: 2,
+//     name: "Jams",
+//     message: "hi hi man",
+//   },
+//   {
+//     senderId: 1,
+//     name: "Tashii",
+//     message: "Gachi baw? Guto maya ga?",
+//   },
+//   {
+//     senderId: 2,
+//     name: "Jams",
+//     message: "Yoe day bay ra. choe?",
+//   },
+//   {
+//     senderId: 1,
+//     name: "Tashii",
+//     message: "ohh stay safe!",
+//   },
+//   {
+//     senderId: 2,
+//     name: "Jams",
+//     message: "you too",
+//   },
+// ];
+// const Message = ({ senderName, message, position = "left" }) => {
+//   return (
+//     <div className={`shadow-3 name-card ${position}`}>
+//       <p>{senderName}</p>
+//       <p>{message}</p>
+//     </div>
+//   );
+// };
+
+// function App() {
+//   return (
+//     <div>
+//       {messages.map((item, index) => {
+//         return (
+//           <Message
+//             key={`message-${index}`}
+//             senderName={item.name}
+//             message={item.message}
+//             position={item.senderId === owner ? "right" : "left"}
+//           />
+//         );
+//       })}
+//     </div>
+//   );
+// // }
+// const students = [
+//   {
+//     studentId: 1,
+//     name: "Tashii",
+//     age: 24,
+//     imageUrl:
+//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNL_1pkhSlo1kXTY6C09dpy7uGDc32yE03XQ&s",
+//   },
+//   {
+//     studentId: 2,
+//     name: "Jamyang",
+//     age: 24,
+//     imageUrl:
+//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYIFIxHUC0aRBYMxSpvm5_6DZjcQ2bjAlPQ&s",
+//   },
+//   {
+//     studentId: 3,
+//     name: "Norbu",
+//     age: 20,
+//     imageUrl:
+//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZkkf5rMk_psyKjNtfs8l0VlT9lUEMIBSfDg&s",
+//   },
+//   {
+//     studentId: 4,
+//     name: "Kuenzang",
+//     age: 23,
+//     imageUrl:
+//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb7cIx1zPzh56-BaiLiMeRR5pgI2JXJppRug&s",
+//   },
+// ];
+// const InfoCard = ({ imageUrl, name, age }) => {
+//   return (
+//     <div className="flex">
+//       <img src={imageUrl} />
+//       <div className="bio">
+//         <h3>{name}</h3>
+//         <p>{age}</p>
+//       </div>
+//     </div>
+//   );
+// };
+
+// function App() {
+//   return (
+//     <div>
+//       {students.map((item) => {
+//         return (
+//           <InfoCard
+//             studentId={item.studentId}
+//             name={item.name}
+//             age={item.age}
+//             imageUrl={item.imageUrl}
+//           />
+//         );
+//       })}
+//     </div>
+//   );
+// }
+// export default App;
+
+function Counter() {
+  const [count, changeCount] = useState(0);
+  return (
+    <div>
+      <p>The current count is {count}</p>
+      <button
+        onClick={() => {
+          changeCount(count + 1);
+        }}
+      >
+        +1
+      </button>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+export default App;

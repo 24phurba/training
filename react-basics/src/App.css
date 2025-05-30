@@ -1,0 +1,145 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+.name-card {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: aqua;
+  margin: 10px;
+  max-width: 200px;
+}
+.name-card.right {
+ text-align: right;
+ margin-left: auto;
+ margin-right: 0;
+}
+.name-card.left {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.flex{
+  display: flex;
+}
+.bio{
+  margin-left: 1rem;
+}
+h3{
+  color: white;
+}
+p{
+  color: white;
+}
+img{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 40px;
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  margin: 5px 0 15px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.completed {
+  background-color: #2e7d32; /* green for complete */
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.todo-item {
+  background-color: #131111;
+  border-left: 4px solid #1976d2;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.completed {
+  border-left-color: #2e7d32;
+  background-color: #e0f2f1;
+  text-decoration: line-through;
+  color: #888;
+}
+

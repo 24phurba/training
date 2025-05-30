@@ -1,0 +1,18 @@
+.name-card{
+  padding: 10px;
+  border-radius: 4px;
+  background-color: aqua;
+  margin: 10px;
+  max-width: 200px;
+}
+.name-card.left{
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+  
+.name-card.right{
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+}
